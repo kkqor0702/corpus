@@ -6,7 +6,7 @@ import gc
 
 # --- 설정 ---
 # 테스트하고 싶은 데이터 개수 입력 (전체 데이터를 하려면 None 설정)
-SAMPLE_SIZE = 12000 
+SAMPLE_SIZE = None
 CHUNK_SIZE = 5000  # 메모리 절약을 위해 한 번에 처리할 데이터 양
 # -----------
 

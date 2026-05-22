@@ -1,5 +1,5 @@
 .idea/
 .venv/
 
-sentiment/*.csv
-sentiment/*.pkl
+# sentiment/*.csv
+# sentiment/*.pkl
