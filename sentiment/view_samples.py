@@ -60,4 +60,4 @@ def view_samples(num_samples=5):
 
 if __name__ == "__main__":
     # 원하는 샘플 개수를 여기에 입력하세요.
-    view_samples(num_samples=10)
+    view_samples(num_samples=100)
