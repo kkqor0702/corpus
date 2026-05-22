@@ -29,7 +29,6 @@
     - **긍정(1)**: 4~5점
     - **부정(0)**: 1~2점
     - *3점 데이터는 데이터 품질을 위해 제외 또는 별도 처리*
-- **스팀 데이터**: 기존 라벨(0: 부정, 1: 긍정) 유지
 
 ### ⑤ 피처 추출 (Feature Extraction)
 - **방법**: TF-IDF (Term Frequency-Inverse Document Frequency)
