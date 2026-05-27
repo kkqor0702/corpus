@@ -80,3 +80,27 @@ python sentiment/view_samples.py
 ```
 
 _참고: KoNLPy(Okt) 사용을 위해 Java JDK가 설치되어 있어야 합니다._
+
+### 8. 감성 분류 모델 학습 및 평가
+`features.pkl`의 데이터를 7:3으로 분할하여 Logistic Regression 모델을 학습하고, 성능을 평가합니다.
+
+```bash
+python sentiment/train_model.py
+```
+
+**출력 내용:**
+- Confusion Matrix (혼동 행렬)
+- Precision, Recall, F1 Score (분류 성능 지표)
+
+**생성되는 파일:**
+- `model.pkl`: 학습된 Logistic Regression 모델 (새로운 리뷰 예측 시 사용)
+
+## 다음 작업: 불만 유형 군집화
+
+부정으로 분류된 리뷰를 K-Means 클러스터링하여 불만 유형을 분석하는 작업이 남아 있습니다.
+
+### 사용할 데이터
+| 파일 | 용도 |
+|------|------|
+| `features.pkl` | `X`(TF-IDF 행렬)와 `y`(라벨)가 들어 있음. `y == 0`인 행이 부정 리뷰 |
+| `tfidf_vectorizer.pkl` | 군집별 키워드 추출 시 사용. `get_feature_names_out()`으로 단어 목록 조회 |
