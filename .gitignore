@@ -1,5 +1,8 @@
 .idea/
 .venv/
 
+# JVM (KoNLPy) 충돌 로그
+hs_err_pid*.log
+
 # sentiment/*.csv
 # sentiment/*.pkl

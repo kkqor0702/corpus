@@ -1,3 +1,7 @@
 pandas
 scikit-learn
 konlpy
+matplotlib
+wordcloud
+sentence-transformers
+torch
